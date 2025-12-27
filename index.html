@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transformations Learning Lab</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-magic"></i> CSS Transformations Learning Lab</h1>
+        <p>Master 2D and 3D transforms through hands‑on examples.</p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Welcome</h2>
+            <p>This page will be gradually filled with transformation examples as you complete each lesson. Use the developer tools to inspect the elements and experiment with the CSS!</p>
+        </section>
+
+        <section id="lessons">
+            <h2>Lesson Examples</h2>
+            <div class="lesson-container">
+                <!-- Lesson 1: Rotation -->
+                <div class="lesson-card">
+                    <h3>Lesson 1: 2D Rotation</h3>
+                    <div class="rotation-demo">
+                        Rotate me!
+                    </div>
+                    <p class="lesson-description">This element is rotated 45° clockwise using <code>transform: rotate(45deg)</code>.</p>
+                </div>
+
+                <!-- Lesson 2: Scaling -->
+                <div class="lesson-card">
+                    <h3>Lesson 2: Scaling</h3>
+                    <div class="scaling-demo">
+                        Scale me!
+                    </div>
+                    <p class="lesson-description">This element is scaled by 1.5× using <code>transform: scale(1.5)</code>.</p>
+                </div>
+
+                <!-- Lesson 3: Translation (placeholder) -->
+                <div class="lesson-card">
+                    <h3>Lesson 3: Translation</h3>
+                    <div class="translation-demo">
+                        Move me!
+                    </div>
+                    <p class="lesson-description">Coming soon: translation with <code>translate()</code>.</p>
+                </div>
+
+                <!-- Lesson 4: 3D Transform (placeholder) -->
+                <div class="lesson-card">
+                    <h3>Lesson 4: 3D Transform</h3>
+                    <div class="three-d-demo">
+                        3D flip
+                    </div>
+                    <p class="lesson-description">Coming soon: 3D rotation with perspective.</p>
+                </div>
+
+                <!-- Lesson 5: Combined Transforms (placeholder) -->
+                <div class="lesson-card">
+                    <h3>Lesson 5: Combined Transforms</h3>
+                    <div class="combined-demo">
+                        Combine!
+                    </div>
+                    <p class="lesson-description">Coming soon: chaining multiple transforms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank">MDN: CSS transform</a></li>
+                <li><a href="https://css-tricks.com/almanac/properties/t/transform/" target="_blank">CSS‑Tricks: transform</a></li>
+                <li><a href="https://caniuse.com/css-transforms" target="_blank">Can I use: CSS Transforms</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSS Transformations Learning Lab • Built with <i class="fas fa-heart"></i> by CSS enthusiasts</p>
+        <p>Follow the <a href="https://github.com/notel1239/css-transforms-starter">GitHub repository</a> for updates.</p>
+    </footer>
+
+    <script>
+        // Simple interactive demo: toggle rotation on click
+        document.querySelector('.rotation-demo').addEventListener('click', function() {
+            this.classList.toggle('rotated');
+        });
+        // Simple interactive demo: toggle scaling on click
+        document.querySelector('.scaling-demo').addEventListener('click', function() {
+            this.classList.toggle('scaled');
+        });
+    </script>
+</body>
+</html>
