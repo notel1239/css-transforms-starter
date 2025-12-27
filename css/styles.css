@@ -1,0 +1,213 @@
+/* CSS Transformations Learning Lab - Main Stylesheet */
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #2d3436;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #636e72;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header i {
+    color: #6c5ce7;
+    margin-right: 10px;
+}
+
+section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #2d3436;
+    border-bottom: 3px solid #6c5ce7;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #2d3436;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.lesson-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.lesson-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 2px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-description {
+    margin-top: 1rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+code {
+    background: #dfe6e9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+/* Lesson 1: Rotation */
+.rotation-demo {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #ff7675, #fd79a8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    /* Initial rotation: 45 degrees */
+    transform: rotate(45deg);
+}
+
+.rotation-demo.rotated {
+    transform: rotate(0deg);
+}
+
+/* Lesson 2: Scaling */
+.scaling-demo {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #74b9ff, #0984e3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    /* Initial scaling: 1.5x */
+    transform: scale(1.5);
+}
+
+.scaling-demo.scaled {
+    transform: scale(1);
+}
+
+/* Placeholder demos for upcoming lessons */
+.translation-demo,
+.three-d-demo,
+.combined-demo {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #55efc4, #00b894);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 15px;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+
+/* Resources section */
+#resources ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#resources li {
+    margin-bottom: 0.8rem;
+}
+
+#resources a {
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dashed #6c5ce7;
+    transition: color 0.3s;
+}
+
+#resources a:hover {
+    color: #a29bfe;
+    border-bottom-style: solid;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    color: #636e72;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+footer i.fa-heart {
+    color: #ff7675;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .lesson-container {
+        grid-template-columns: 1fr;
+    }
+    header h1 {
+        font-size: 2.2rem;
+    }
+    body {
+        padding: 1rem;
+    }
+}
